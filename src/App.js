@@ -33,7 +33,7 @@ useEffect((
   fetch('http://openlibrary.org/search.json?q='+searchThis)
   .then(response => response.json())
   .then(response => setSearchResult(response.docs))
-  .catch(err => console.alert("err"));
+  .catch(err => console.error("err"));
 }
 
 ,[searchThis,counter])
