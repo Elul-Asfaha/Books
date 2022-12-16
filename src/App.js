@@ -1,6 +1,11 @@
-import { useState,createContext,useEffect } from 'react';
+import { useState,createContext} from 'react';
 import Menu from './components/Menu';
+// import DisplayResults from './pages/DisplayResults';
+import Nav from './components/Nav'
+import Footer from './components/Footer'
 import Home from './pages/Home'
+// import DisplayResults from './pages/DisplayResults';
+
 //import Login from './pages/Login';
 //import SignUp from './pages/Signup';
 
@@ -29,21 +34,20 @@ function App() {
       catagory: "",
       query: "", 
   })
+const [searchResult,setSearchResult]=useState([])
 
-  const [Counter,setCounter]=useState(0)
-  useEffect(()=>{
-
-   
-    fetch('http://openlibrary.org/search/authors.json?q=dune')
+// this searchs open library
+  const searchOpenLibrary=()=>{
+    fetch('http://openlibrary.org/search.json?q='+searchQuery.query)
       .then(response => response.json())
-      .then(response => console.log(response))
+      .then(response => setSearchResult(response))
       .catch(err => console.error(err));
 
 
-  },[Counter])
-  
+  }
   
 
+  //  this handles the search input 
   const handleSearchQuery=(e)=>{
     const {name,value}=e.target
     setSearchQuery({
@@ -63,16 +67,24 @@ function App() {
   // searchs when the form is submitted
   const handleSearch=(e)=>{
     e.preventDefault()
-    setCounter(item=>item+1)
+    searchOpenLibrary()
   }
 
 
 
   return (
-    <provideData.Provider value={{handleMenuToggle,handleSearchQuery,handleSearch}}>
-      <div class='relative'>
-        <Home  menuHandle={()=>handleMenuToggle()}/>
-        {MenuToggle &&<Menu  menuHandle={()=>handleMenuToggle()}/>}
+    <provideData.Provider value={{handleMenuToggle,handleSearchQuery,handleSearch,searchResult}}>
+      <div class='relative min-h-screen dark:bg-slate-800 dark:text-white'>
+      
+       <Nav />
+
+          {(searchResult.length===0) && <Home  menuHandle={()=>handleMenuToggle()}/>}
+          {/* {(searchResult.length!==0) && <DisplayResults/>} */}
+          {MenuToggle &&<Menu  menuHandle={()=>handleMenuToggle()}/>}
+
+
+        <Footer/>
+
       </div>
     </provideData.Provider>
   );

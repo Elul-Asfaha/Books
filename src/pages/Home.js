@@ -1,5 +1,3 @@
-import Nav from '../components/Nav'
-import Footer from '../components/Footer'
 // import Loading from '../components/Loading'
 import SearchIcon from '@mui/icons-material/Search';
 import { provideData } from '../App';
@@ -7,10 +5,7 @@ import { useContext } from 'react';
 const Home=()=>{
     const provided=useContext(provideData)
     return(
-        <div class="min-h-screen flex flex-col h-screen text-base dark:text-white dark:bg-slate-800">
-            <Nav />
-                <main class="p-4 flex-grow flex flex-col items-center justify-center gap-5">
-                
+                <main class="h-screen flex flex-col items-center justify-center">
                     <h1 class="text-4xl">
                         Open Library
                     </h1>
@@ -43,8 +38,6 @@ const Home=()=>{
                       
                     </form>
                 </main>
-            <Footer/>
-        </div>
         )
 }
 export default Home

@@ -1,0 +1,162 @@
+author_alternative_name
+: 
+(10) ['Franck Herbert', 'FRANK HERBERT', 'Herbert, Frank', 'Herbert Frank', 'frank herbert', 'Frank HERBERT', 'F Herbert', 'herbert-frank', 'Frank Herbert Dost Korpe', 'HERBERT FRANK']
+author_facet
+: 
+(2) ['OL1846639A Michel Demuth', 'OL79034A Frank Herbert']
+author_key
+: 
+(2) ['OL79034A', 'OL1846639A']
+author_name
+: 
+(2) ['Frank Herbert', 'Michel Demuth']
+contributor
+: 
+(9) ['Scott Brick (Narrator)', 'Tasçioglu, Arzu.', 'Herbert, Frank, 1920-1986.', 'Euan Morton (Narrator)', 'Vural, Deniz.', "Connor O'Brien (Narrator)", 'Simon Vance (Narrator)', 'Katherine Kellgren (Narrator)', 'Random House Mondadori (Editor)']
+cover_edition_key
+: 
+"OL10256217M"
+cover_i
+: 
+2421405
+ddc
+: 
+(2) ['823.91', '813.54']
+ddc_sort
+: 
+"823.91"
+ebook_access
+: 
+"borrowable"
+ebook_count_i
+: 
+10
+edition_count
+: 
+66
+edition_key
+: 
+(66) ['OL20042704M', 'OL16181125M', 'OL27292024M', 'OL18143783M', 'OL4571643M', 'OL18715561M', 'OL19824519M', 'OL15068254M', 'OL7569219M', 'OL15048950M', 'OL7569172M', 'OL7500565M', 'OL8865577M', 'OL17721719M', 'OL21405822M', 'OL22078380M', 'OL24205739M', 'OL24226501M', 'OL7500647M', 'OL24764208M', 'OL24669863M', 'OL7470459M', 'OL13276875M', 'OL7500836M', 'OL15048199M', 'OL7500957M', 'OL15048523M', 'OL25432140M', 'OL7501093M', 'OL8889705M', 'OL7501104M', 'OL23744116M', 'OL7501473M', 'OL7501409M', 'OL15049102M', 'OL7501659M', 'OL7501756M', 'OL7501962M', 'OL7502159M', 'OL7502059M', 'OL7877926M', 'OL22645961M', 'OL21657939M', 'OL32216370M', 'OL7525229M', 'OL19610838M', 'OL18263798M', 'OL17489450M', 'OL9537940M', 'OL7973614M', 'OL12543891M', 'OL23044495M', 'OL9041232M', 'OL24235829M', 'OL13362129M', 'OL26719093M', 'OL8536875M', 'OL10256217M', 'OL24057989M', 'OL24248845M', 'OL28639494M', 'OL32200621M', 'OL29328221M', 'OL32663676M', 'OL28914400M', 'OL29887750M']
+first_publish_year
+: 
+1969
+first_sentence
+: 
+(2) ['IN THE week before their departure to Arrakis, whe… crone came to visit the mother of the boy, Paul.', "Muad'dib's Imperial reign generated more historians than any other era in human history."]
+has_fulltext
+: 
+true
+ia
+: 
+(11) ['dunemessiah0000unse', 'dunesuividelemes0000herb', 'dunemessiah00herb', 'dunemessiah02herb', 'dunemessiahbookt00herb', 'dunemessiahbookt00herb', 'dunemessiah00fran', 'dunemessiahdunec00fran', 'messiiadiunydeti00herb', 'elmesasdedune00herb', 'dunemessiah0000herb']
+ia_box_id
+: 
+(9) ['IA111714', 'IA139801', 'IA40028320', 'IA1834016', 'IA112018', 'IA1529913', 'IA1398305', 'IA1148501', 'IA119913']
+ia_collection
+: 
+(20) ['americana', 'binghamton-ol', 'china', 'cnusd-ol', 'dartmouthlibrary-ol', 'delawarecountydistrictlibrary', 'delawarecountydistrictlibrary-ol', 'denverpubliclibrary-ol', 'gwulibraries-ol', 'inlibrary', 'internetarchivebooks', 'library_of_atlantis', 'librarygenesis', 'openlibrary-d-ol', 'printdisabled', 'rochester-ol', 'spokanepubliclibrary-ol', 'uni-ol', 'universityofcoloradoboulder-ol', 'worthingtonlibraries-ol']
+ia_collection_s
+: 
+"americana;binghamton-ol;china;cnusd-ol;dartmouthlibrary-ol;delawarecountydistrictlibrary;delawarecountydistrictlibrary-ol;denverpubliclibrary-ol;gwulibraries-ol;inlibrary;internetarchivebooks;library_of_atlantis;librarygenesis;openlibrary-d-ol;printdisabled;rochester-ol;spokanepubliclibrary-ol;uni-ol;universityofcoloradoboulder-ol;worthingtonlibraries-ol"
+id_amazon
+: 
+(3) ['226600865X', 'B0006CU6OW', '']
+id_better_world_books
+: 
+['BWB19752900']
+id_dnb
+: 
+['961720387']
+id_goodreads
+: 
+(31) ['122328', '53780', '531719', '1633954', '873862', '873860', '873859', '1829194', '106', '873858', '826137', '53728', '53745', '873861', '2056024', '117902', '182503', '1495434', '1022842', '1022840', '1000050', '1022838', '463168', '873857', '1022845', '1852039', '182505', '2331609', '1022850', '1022851', '1022837']
+id_librarything
+: 
+['8183']
+id_overdrive
+: 
+['2AF64392-77FC-4727-BB47-1915646E0A0C']
+id_wikidata
+: 
+['Q110919481']
+isbn
+: 
+(96) ['9780450053085', '0441172695', '0450053083', '9780399102264', '0425079015', '9782266027250', '0450032663', '0425071804', '0425043460', '9780441172696', '0425074986', '3453301439', '9780450041563', '9780425061732', '0425053148', '9789755760308', '2266154516', '9780450022852', '8401469325', '2221001648', '3453186842', '9780425039304', '1429598913', '0425055035', '0425061736', '9780736640183', '2266235818', '9783453319547', '9780425026014', '226600865X', '0399102264', '3453319540', '0450022854', '8470022008', '9780425035856', '1429598948', '975576030X', '9780575006683', '9780425053140', '0450012298', '5237041485', '9782266008655', '8385432256', '0450050882', '0425029522', '9785237041484', '0425039307', '0425064360', '9781429598941', '9788470022005', '9782266154512', '0425026019', '9780808520733', '0425043797', '9781427202369', '9780450050886', '9788497596671', '9780425043462', '0425018474', '9780593201732', '9783453301436', '0450041565', '0575006684', '0575035412', '9780441015610', '9780425074985', '0425035859', '9780425079010', '9780425018477', '9786053755319', '9788401469329', '0593201736', '9783453186842', '9781429598910', '9780425071809', '9780425064368', '0593098234', '1473655323', '9780593098233', '0808520733', '6053755311', '9780450012297', '9780575035416', '0736640185', '8497596676', '9782266235815', '9781473655324', '9782221001646', '0441015611', '9788385432258', '9780450032660', '9780425043790', '9780425055038', '2266027255', '1427202362', '9780425029527']
+key
+: 
+"/works/OL893526W"
+language
+: 
+(8) ['und', 'eng', 'fre', 'spa', 'ger', 'pol', 'tur', 'rus']
+last_modified_i
+: 
+1670678125
+lcc
+: 
+(7) ['PS-3558.00000000.E63 Du', 'PS-3558.00000000.E63', 'PS-3558.00000000.E63 D86 2008', 'PZ-0004.00000000.H5356 Du', 'PS-3558.00000000.E63D82 2017', 'PZ-0004.00000000.H5356', 'PS-3558.00000000.E63 D85 1975']
+lcc_sort
+: 
+"PS-3558.00000000.E63 D86 2008"
+lccn
+: 
+(2) ['77091815', '2007040248']
+lending_edition_s
+: 
+"OL15048950M"
+lending_identifier_s
+: 
+"dunemessiah0000unse"
+number_of_pages_median
+: 
+278
+oclc
+: 
+(12) ['44722812', '31943109', '13052855', '170922099', '471118176', '2504101', '39319091', '473233718', '12934941', '5372726', '123573138', '11174748']
+printdisabled_s
+: 
+"OL15048950M;OL8865577M;OL24205739M;OL24226501M;OL24764208M;OL24669863M;OL7500836M;OL7525229M;OL23044495M;OL13362129M"
+public_scan_b
+: 
+false
+publish_date
+: 
+(51) ['January 1, 1980', 'December 15, 1984', 'Nov 22, 2012', '2020', 'Aug 28, 1969', 'May 15, 1983', 'Apr 26, 2005', '1972', 'November 1, 1981', '1999', 'November 5, 1976', 'June 1976', 'April 1, 1982', '1992', 'April 1, 1974', 'March 15, 1977', '1975', '1985', 'August 15, 1975', '1970', 'June 15, 1979', 'Feb 11, 2019', '1984', 'December 15, 1982', 'March 15, 1980', '1969', 'October 1, 1984', 'February 28, 2003', '1995', '1978', 'September 1, 1972', 'October 15, 1997', 'July 15, 1987', '2017', '1980', 'October 2, 2007', '2001', '1977', 'Apr 13, 2016', 'May 15, 1978', '2008', 'February 5, 2008', 'May 1, 2001', 'February 15, 1984', '2019', 'January 1, 1975', 'November 15, 1984', 'October 1999', '1997', '1982', '1971']
+publish_place
+: 
+(8) ['Barcelona', 'London', 'Istanbul', 'Moskva', 'New York, NY', 'New York', 'Gdansk', 'München, Germany']
+publish_year
+: 
+(31) [2020, 1972, 1999, 1992, 1975, 1985, 1970, 1974, 1976, 1984, 1969, 2012, 1995, 1978, 1983, 2017, 1980, 2001, 1977, 2007, 2008, 1979, 2016, 1987, 1981, 2005, 2019, 2003, 1997, 1982, 1971]
+publisher
+: 
+(37) ["G.P. Putnam's Sons", 'AST', 'Penguin Group USA, Inc.', 'Hodder & Stoughton', 'Berkley', 'Putnam Adult', 'Berkley Trade', 'Penguin Publishing Group', 'Berkley Publishing', 'Wilhelm Heyne Verlag', 'Heyne Verlag', 'Ace', 'Audio Renaissance', 'Ithaki Yayinlari', 'Berkeley', 'Orion Publishing Co', 'Tandem Library', 'Ace Books', 'Debolsillo', 'Books On Tape', 'Robert Laffont', 'Gollancz', 'Hodder & Stoughton Ltd', 'New English Library', 'Putnam', 'Heyne', 'Acervo', 'Sarmal Yayinevi', 'Phantom Press International', 'Berkley Pub. Co.', 'Ace Hardcover', 'Plaza & Janes Editores', 'CORONET (HODD)', 'Editions Robert Laffront, S.A.', 'POCKET', 'Berkley Books', 'Pocket']
+publisher_facet
+: 
+(37) ['AST', 'Ace', 'Ace Books', 'Ace Hardcover', 'Acervo', 'Audio Renaissance', 'Berkeley', 'Berkley', 'Berkley Books', 'Berkley Pub. Co.', 'Berkley Publishing', 'Berkley Trade', 'Books On Tape', 'CORONET (HODD)', 'Debolsillo', 'Editions Robert Laffront, S.A.', "G.P. Putnam's Sons", 'Gollancz', 'Heyne', 'Heyne Verlag', 'Hodder & Stoughton', 'Hodder & Stoughton Ltd', 'Ithaki Yayinlari', 'New English Library', 'Orion Publishing Co', 'POCKET', 'Penguin Group USA, Inc.', 'Penguin Publishing Group', 'Phantom Press International', 'Plaza & Janes Editores', 'Pocket', 'Putnam', 'Putnam Adult', 'Robert Laffont', 'Sarmal Yayinevi', 'Tandem Library', 'Wilhelm Heyne Verlag']
+seed
+: 
+(88) ['/books/OL20042704M', '/books/OL16181125M', '/books/OL27292024M', '/books/OL18143783M', '/books/OL4571643M', '/books/OL18715561M', '/books/OL19824519M', '/books/OL15068254M', '/books/OL7569219M', '/books/OL15048950M', '/books/OL7569172M', '/books/OL7500565M', '/books/OL8865577M', '/books/OL17721719M', '/books/OL21405822M', '/books/OL22078380M', '/books/OL24205739M', '/books/OL24226501M', '/books/OL7500647M', '/books/OL24764208M', '/books/OL24669863M', '/books/OL7470459M', '/books/OL13276875M', '/books/OL7500836M', '/books/OL15048199M', '/books/OL7500957M', '/books/OL15048523M', '/books/OL25432140M', '/books/OL7501093M', '/books/OL8889705M', '/books/OL7501104M', '/books/OL23744116M', '/books/OL7501473M', '/books/OL7501409M', '/books/OL15049102M', '/books/OL7501659M', '/books/OL7501756M', '/books/OL7501962M', '/books/OL7502159M', '/books/OL7502059M', '/books/OL7877926M', '/books/OL22645961M', '/books/OL21657939M', '/books/OL32216370M', '/books/OL7525229M', '/books/OL19610838M', '/books/OL18263798M', '/books/OL17489450M', '/books/OL9537940M', '/books/OL7973614M', '/books/OL12543891M', '/books/OL23044495M', '/books/OL9041232M', '/books/OL24235829M', '/books/OL13362129M', '/books/OL26719093M', '/books/OL8536875M', '/books/OL10256217M', '/books/OL24057989M', '/books/OL24248845M', '/books/OL28639494M', '/books/OL32200621M', '/books/OL29328221M', '/books/OL32663676M', '/books/OL28914400M', '/books/OL29887750M', '/works/OL893526W', '/subjects/american_science_fiction', '/subjects/dune_(imaginary_place)', '/subjects/fiction', '/subjects/fiction_in_english', '/subjects/imaginary_places', '/subjects/science_fiction', '/subjects/translations_into_russian', '/subjects/novela', '/subjects/dune_(lugar_imaginario)', '/subjects/lectures_et_morceaux_choisis', '/subjects/science_fiction', '/subjects/anglais_(langue)', '/subjects/roman_ame_ricain', '/subjects/science-fiction_ame_ricaine', '/subjects/long_now_manual_for_civilization', '/subjects/roman_américain', '/subjects/science-fiction_américaine', '/subjects/dune_(imaginary_place)_fiction', '/subjects/fiction_science_fiction_general', '/authors/OL79034A', '/authors/OL1846639A']
+subject
+: 
+(19) ['American Science fiction', 'Dune (Imaginary place)', 'Fiction', 'Fiction in English', 'Imaginary places', 'Science Fiction', 'Translations into Russian', 'Novela', 'Dune (Lugar imaginario)', 'Lectures et morceaux choisis', 'Science fiction', 'Anglais (langue)', 'Roman ame ricain', 'Science-fiction ame ricaine', 'Long Now Manual for Civilization', 'Roman américain', 'Science-fiction américaine', 'Dune (imaginary place), fiction', 'Fiction, science fiction, general']
+subject_facet
+: 
+(19) ['American Science fiction', 'Anglais (langue)', 'Dune (Imaginary place)', 'Dune (Lugar imaginario)', 'Dune (imaginary place), fiction', 'Fiction', 'Fiction in English', 'Fiction, science fiction, general', 'Imaginary places', 'Lectures et morceaux choisis', 'Long Now Manual for Civilization', 'Novela', 'Roman ame ricain', 'Roman américain', 'Science Fiction', 'Science fiction', 'Science-fiction ame ricaine', 'Science-fiction américaine', 'Translations into Russian']
+subject_key
+: 
+(18) ['american_science_fiction', 'anglais_(langue)', 'dune_(imaginary_place)', 'dune_(imaginary_place)_fiction', 'dune_(lugar_imaginario)', 'fiction', 'fiction_in_english', 'fiction_science_fiction_general', 'imaginary_places', 'lectures_et_morceaux_choisis', 'long_now_manual_for_civilization', 'novela', 'roman_ame_ricain', 'roman_américain', 'science-fiction_ame_ricaine', 'science-fiction_américaine', 'science_fiction', 'translations_into_russian']
+title
+: 
+"Dune Messiah"
+title_suggest
+: 
+"Dune Messiah"
+type
+: 
+"work"
+_version_
+: 
+1751832988810739700
+[[Prototype]]
+: 
+Object
