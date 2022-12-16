@@ -19,6 +19,8 @@ function App() {
       catagory: "",
       query: "", 
   })
+
+  const [searchThis,setSearchThis]=useState("")
 const [searchResult,setSearchResult]=useState([])
 
 const [counter,setCounter]=useState(0)
@@ -28,14 +30,13 @@ const [counter,setCounter]=useState(0)
 useEffect((
 )=>{
 
-  fetch('http://openlibrary.org/search.json?q='+searchQuery.query)
+  fetch('http://openlibrary.org/search.json?q='+searchThis)
   .then(response => response.json())
   .then(response => setSearchResult(response.docs))
   .catch(err => console.alert("err"));
-
 }
 
-,[counter])
+,[searchThis,counter])
 
   //  this handles the search input 
   const handleSearchQuery=(e)=>{
@@ -57,6 +58,7 @@ useEffect((
   // searchs when the form is submitted
   const handleSearch=(e)=>{
     setCounter(counter=>counter+1)
+    setSearchThis(searchQuery.query)
     e.preventDefault()
   }
 
