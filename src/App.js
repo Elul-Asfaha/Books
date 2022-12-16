@@ -1,26 +1,12 @@
-import { useState,createContext} from 'react';
+import { useState,createContext, useEffect} from 'react';
 import Menu from './components/Menu';
-// import DisplayResults from './pages/DisplayResults';
-
+import DisplayResults from './pages/DisplayResults';
 import Home from './pages/Home'
-// import DisplayResults from './pages/DisplayResults';
-
 //import Login from './pages/Login';
 //import SignUp from './pages/Signup';
 
 
 export const  provideData=createContext()
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -35,16 +21,21 @@ function App() {
   })
 const [searchResult,setSearchResult]=useState([])
 
+const [counter,setCounter]=useState(0)
 // this searchs open library
-  const searchOpenLibrary=()=>{
-    fetch('http://openlibrary.org/search.json?q='+searchQuery.query)
-      .then(response => response.json())
-      .then(response => setSearchResult(response))
-      .catch(err => console.error(err));
-
-
-  }
   
+
+useEffect((
+)=>{
+
+  fetch('http://openlibrary.org/search.json?q='+searchQuery.query)
+  .then(response => response.json())
+  .then(response => setSearchResult(response.docs))
+  .catch(err => console.alert("err"));
+
+}
+
+,[counter])
 
   //  this handles the search input 
   const handleSearchQuery=(e)=>{
@@ -65,8 +56,8 @@ const [searchResult,setSearchResult]=useState([])
 
   // searchs when the form is submitted
   const handleSearch=(e)=>{
+    setCounter(counter=>counter+1)
     e.preventDefault()
-    searchOpenLibrary()
   }
 
 
@@ -76,7 +67,8 @@ const [searchResult,setSearchResult]=useState([])
       <div className='relative min-h-screen flex flex-col dark:bg-slate-800 dark:text-white'>
     
           {(searchResult.length===0) && <Home  menuHandle={()=>handleMenuToggle()}/>}
-          {/* {(searchResult.length!==0) && <DisplayResults/>} */}
+          {(searchResult.length!==0) && <DisplayResults/>}
+          
           {MenuToggle &&<Menu  menuHandle={()=>handleMenuToggle()}/>}
 
       </div>

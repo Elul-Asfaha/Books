@@ -6,9 +6,9 @@ import { useContext } from 'react';
 const Home=()=>{
     const provided=useContext(provideData)
     return(     
-            <div className="min-h-screen flex flex-col h-screen text-base text-white bg-slate-800">
+            <div className="min-h-screen flex flex-col min-h-screen text-base text-white bg-slate-800">
                 <Nav />
-                <main className="p-4 flex-grow flex flex-col items-center justify-center gap-5">
+                <div className="p-4 flex-grow flex flex-col items-center justify-center gap-5">
                     <h1 className="text-4xl">
                         Open Library
                     </h1>
@@ -40,7 +40,7 @@ const Home=()=>{
                         </div>
                       
                     </form>
-                </main>
+                </div>
                 <Footer/>
             </div>
         )

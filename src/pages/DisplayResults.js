@@ -1,17 +1,35 @@
 import { useContext } from "react"
 import { provideData } from "../App"
 import Book from "../components/Book"
+import Footer from "../components/Footer"
+import Nav from "../components/Nav"
+import SearchIcon from '@mui/icons-material/Search';
+
+
+
 const DisplayResults=()=>{
     const provided=useContext(provideData)
-    
-    const dispResult=provided.searchResult.map(items=><Book key={items.name} data={items} />)
-    console.log(provided.searchResult)
-
-
+    const useProdived=provided.searchResult
+    const dispResult=useProdived.map(items=>(items.isbn) &&<Book key={items.key} data={items} isbn={items.isbn} />)
     return(
-        <div>
-                {dispResult}
-                {dispResult}
+            
+        <div className="min-h-screen flex flex-col min-h-screen text-base text-white bg-slate-800">
+            <Nav/>
+
+            <div className="flex flex-col items-center w-full">
+                    <form onSubmit={provided.handleSearch} className="my-5 flex justify-center  items-center bg-white border border-black w-8/12 md:w-3/12 ">
+                        <input type='text' name="query" className='indent-2 outline-none text-black w-full' onChange={provided.handleSearchQuery}/>
+                        <button onClick={provided.handleSearch} className="bg-teal-900">
+                            <SearchIcon className="h-100 m-1 text-white-900 cursor-pointer bg-teal-900"/>
+                        </button>
+                    </form>
+
+                    <div className="flex flex-wrap w-full items-center justify-center md:justify-center gap-5">
+                        {dispResult}
+                    </div>
+            </div>
+
+            <Footer/>
         </div>
     )
 }
