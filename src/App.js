@@ -1,8 +1,7 @@
 import { useState,createContext} from 'react';
 import Menu from './components/Menu';
 // import DisplayResults from './pages/DisplayResults';
-import Nav from './components/Nav'
-import Footer from './components/Footer'
+
 import Home from './pages/Home'
 // import DisplayResults from './pages/DisplayResults';
 
@@ -74,16 +73,11 @@ const [searchResult,setSearchResult]=useState([])
 
   return (
     <provideData.Provider value={{handleMenuToggle,handleSearchQuery,handleSearch,searchResult}}>
-      <div class='relative min-h-screen dark:bg-slate-800 dark:text-white'>
-      
-       <Nav />
-
+      <div className='relative min-h-screen flex flex-col dark:bg-slate-800 dark:text-white'>
+    
           {(searchResult.length===0) && <Home  menuHandle={()=>handleMenuToggle()}/>}
           {/* {(searchResult.length!==0) && <DisplayResults/>} */}
           {MenuToggle &&<Menu  menuHandle={()=>handleMenuToggle()}/>}
-
-
-        <Footer/>
 
       </div>
     </provideData.Provider>

@@ -7,14 +7,14 @@ const Nav=()=>{
 const  provided=useContext(provideData)
 
     return(
-        <header  class="w-full text-white dark:bg-slate-900 p-5">
-            <nav class="flex justify-between items-center">
+        <header  className="w-full text-white bg-slate-900 p-5">
+            <nav className="flex justify-between items-center">
                         Home
                     <div>
-                        <span class="md:hidden">
+                        <span className="md:hidden">
                             <MenuIcon  onClick={provided.handleMenuToggle}/>
                         </span>
-                        <div class="hidden md:block">
+                        <div className="hidden md:block">
                             <Currentuser/>
                         </div>
                     </div>

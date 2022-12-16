@@ -10,20 +10,20 @@ const Menu=()=>{
 
 
     return(
-        <div class="flex flex-col md:hidden justify-between absolute top-0 left-0 bot-0 w-full h-screen bg-slate-700 p-3 z-50">
-            <div class="flex justify-between">
-                <div class="flex flex-col justify-center">
+        <div className="flex flex-col md:hidden justify-between absolute top-0 left-0 bot-0 w-full h-screen bg-slate-700 p-3 z-50">
+            <div className="flex justify-between">
+                <div className="flex flex-col justify-center">
                     <p>Home</p>
                     <p>About</p>
                     <p>Contact us</p>
                 </div>    
-                <button class="flex">
+                <button className="flex">
                     <Close  onClick={provided.handleMenuToggle}/>
                 </button>
             </div>
-            <div class="flex justify-between px-5">
+            <div className="flex justify-between px-5">
                 <Currentuser/>
-                <Signoutbtn class="flex items-center"/>
+                <Signoutbtn className="flex items-center"/>
             </div>
         </div>
     )
