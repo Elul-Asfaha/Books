@@ -16,7 +16,7 @@ const DisplayResults=()=>{
         <div className="min-h-screen flex flex-col min-h-screen text-base text-white bg-slate-800">
             <Nav/>
 
-            <div className="flex flex-col items-center w-full">
+            <div className="flex flex-col flex-grow items-center w-full">
                     <form onSubmit={provided.handleSearch} className="my-5 flex justify-center  items-center bg-white border border-black w-8/12 md:w-3/12 ">
                         <input type='text' name="query" className='indent-2 outline-none text-black w-full' onChange={provided.handleSearchQuery}/>
                         <button onClick={provided.handleSearch} className="bg-teal-900">
