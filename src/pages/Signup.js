@@ -2,26 +2,35 @@ const SignUp=()=>{
     return(
      
 
-        <section className="h-screen dark:bg-slate-900">
+        <section className="h-screen bg-slate-900">
             <div className="px-6 h-full text-white">
                 <div
-                    className="flex xl:justify-center lg:justify-between justify-center items-center flex-wrap h-full g-6"
+                    className="flex xl:justify-center lg:justify-center justify-center items-center flex-wrap h-full g-6"
                 >
-                    <div className="xl:ml-20 xl:w-4/12 lg:w-5/12 md:w-8/12 mb-12 md:mb-0 ">
+                    <div className="xl:ml-20 xl:w-4/12 lg:w-4/12 md:w-7/12 mb-12 md:mb-0 ">
                         <form>
-                            <div className="flex flex-row items-center justify-center lg:justify-start mb-6">
+                            <div className="flex flex-row items-center justify-center lg:justify-center mb-6">
                                 <p className="text-lg mb-0 mr-4">CREATE NEW ACCOUNT</p>
                            
                             </div>
                 
-                        
-                
+                            
                             <div className="mb-6">
                                 <input
                                     type="text"
                                     className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                                    id="exampleFormControlInput2"
+                                    placeholder="Username"
+                                    required
+                                />
+                            </div>
+                        
+                
+                            <div className="mb-6">
+                                <input
+                                    type="email"
+                                    className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                                     placeholder="Email address"
+                                    required
                                 />
                             </div>
                 
@@ -30,8 +39,8 @@ const SignUp=()=>{
                                 <input
                                     type="password"
                                     className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                                    id="exampleFormControlInput2"
                                     placeholder="Password"
+                                    required
                                 />
                             </div>
 
@@ -39,8 +48,8 @@ const SignUp=()=>{
                                 <input
                                     type="password"
                                     className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                                    id="exampleFormControlInput2"
                                     placeholder="Confirm Password"
+                                    required
                                 />
                             </div>
                 

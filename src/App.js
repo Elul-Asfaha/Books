@@ -2,7 +2,8 @@ import { useState,createContext, useEffect} from 'react';
 import Menu from './components/Menu';
 import DisplayResults from './pages/DisplayResults';
 import Home from './pages/Home'
-//import Login from './pages/Login';
+import Login from './pages/Login';
+// import SignUp from './pages/Signup';
 //import SignUp from './pages/Signup';
 
 
@@ -12,7 +13,9 @@ export const  provideData=createContext()
 
 
 function App() {
-  
+  // const [verifiedUser,setVerifiedUser]=useState(false)
+  const [user,setUser]=useState("")
+
   const [MenuToggle,setMenuToggle]=useState(false)
   const [searchQuery,setSearchQuery]=useState(
     {
@@ -20,17 +23,24 @@ function App() {
       query: "", 
   })
 
-  const [searchThis,setSearchThis]=useState("")
+const [searchThis,setSearchThis]=useState("")
 const [searchResult,setSearchResult]=useState([])
 
 const [counter,setCounter]=useState(0)
-// this searchs open library
-  
 
+
+const handleLogin=(e)=>{
+  e.preventDefault()
+  setUser("username")
+  console.log(user)
+
+}
+
+// this searchs open library
 useEffect((
 )=>{
 
-  fetch('https://openlibrary.org/search.json?q='+searchThis)
+  fetch('http://openlibrary.org/search.json?q='+searchThis)
   .then(response => response.json())
   .then(response => setSearchResult(response.docs))
   .catch(err => console.error("err"));
@@ -62,18 +72,27 @@ useEffect((
     e.preventDefault()
   }
 
-
+const handleLogOut=()=>{
+  setUser("")
+}
 
   return (
-    <provideData.Provider value={{handleMenuToggle,handleSearchQuery,handleSearch,searchResult}}>
-      <div className='relative min-h-screen flex flex-col dark:bg-slate-800 dark:text-white'>
+    <provideData.Provider value={{handleMenuToggle,handleSearchQuery,handleSearch,handleLogin,handleLogOut,searchResult,user}}>
     
-          {(searchResult.length===0) && <Home  menuHandle={()=>handleMenuToggle()}/>}
-          {(searchResult.length!==0) && <DisplayResults/>}
-          
-          {MenuToggle &&<Menu  menuHandle={()=>handleMenuToggle()}/>}
+    
+    
+    
+      {(!user) &&<Login/>}    
+      {(user) &&   
+        <div className='relative min-h-screen flex flex-col dark:bg-slate-800 dark:text-white'>
+      
+            {(searchResult.length===0) && <Home/>}
+            {(searchResult.length!==0) && <DisplayResults/>}
+            
+            {MenuToggle &&<Menu />}
 
-      </div>
+        </div>
+      }
     </provideData.Provider>
   );
 }

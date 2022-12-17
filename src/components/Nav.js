@@ -9,8 +9,11 @@ const  provided=useContext(provideData)
     return(
         <header  className="w-full text-white bg-slate-900  p-5">
             <nav className="flex justify-between items-center">
-                    <div className="cursor-pointer">
-                        Home
+                    <div className="cursor-pointer text-yellow-100 ">
+                        Open
+                        <span className="text-blue-600 text-sm">
+                            Library
+                        </span>
                     </div>
                     <div>
                         <span className="md:hidden">
