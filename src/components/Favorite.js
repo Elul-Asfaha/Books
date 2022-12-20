@@ -7,24 +7,22 @@ import { db } from '../firebase';
 
 
 const Favorite=(props)=>{
-    const [fav,setFav]=useState(true)
+    const [fav,setFav]=useState(false)
 
     const handleFavoriteToggle=()=>{
-    (fav) && addFav() 
-        setFav(!fav)
+    (!fav) && addFav() 
+        setFav(true)
  }
-
  const addFav=async()=>{
     await addDoc(collection(db,'favorites'),{
         key: props.data.key
     })
  }
 
-
     return(
         <div className="absolute top-5 right-5" onClick={handleFavoriteToggle}>
-            {fav && <FavoriteBorder />}
-            {(!fav) && <FavoriteIcon/>}
+            {!fav && <FavoriteBorder />}
+            {(fav) && <FavoriteIcon/>}
         </div>
     )
 }

@@ -1,8 +1,15 @@
 import { useEffect, useState } from "react";
 
+import {  deleteDoc, doc } from 'firebase/firestore';
+import { db } from '../firebase';
+
+
 const Favoritebooks=(props)=>{
     const [retrieved,setRetrieved]=useState("")
-    const searchQuery=props.id
+    const searchQuery=props.works
+   
+   
+   //search the openlibrary works api
     useEffect((
         )=>{
       
@@ -13,23 +20,27 @@ const Favoritebooks=(props)=>{
         }
       
         ,[searchQuery])
-        console.log(searchQuery)
-        console.log(retrieved)
       
+
+        const handleRemoveFav=async()=>{
+            await deleteDoc(doc(db,'favorites',props.id));
+
+         }
+
     return(
-        <div  className="w-auto border border-white border-2 p-3 flex flex-col md:flex-row justify-center items-center w-8/12 md:w-4/12 lg:w-3/12 min-h-[300px]">
-            <div className="flex-1 flex flex-col mt-3  items-start w-full pl-4">
+        <div  className="shadow-md shadow-slate-700 w-10/12 md:flex md:flex-col md:w-4/12 lg:w-3/12">
+            <div className="flex-1 border border-1">
+                cover goes here
+            </div>
+            <div className="flex-1 flex  flex-col mt-3  items-start w-full pl-4">
                 <p>
                     Title:{" "+retrieved.title}
                 </p>
-                <p>
-                </p>
-                <p>
-                    Published:{" "+retrieved.last_modified.value}
-                </p>
-              
+           
 
             </div>
+            <button className="h-full border border-1 px-3 py-2 rounded self-center" onClick={handleRemoveFav}>Remove</button>
+
         </div>
     )
 }

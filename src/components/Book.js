@@ -1,7 +1,6 @@
 import Favorite from "./Favorite"
 
 const Book=(props)=>{
-
     return(
         <div  className="relative shadow-md shadow-slate-700 w-10/12 md:flex md:flex-col md:w-4/12 lg:w-3/12">
             <div className=" p-5 w-full">
@@ -20,7 +19,7 @@ const Book=(props)=>{
             </div>
 
 
-            <Favorite data={props.data}/>
+            <Favorite data={props.data} id={props.id} />
 
         </div>
     )
