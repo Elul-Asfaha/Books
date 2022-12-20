@@ -22,7 +22,7 @@ const  provided=useContext(provideData)
                         </span>
                         <div className="hidden md:block md:flex md:items-center md:gap-2">
                             <Link  to="/favorites">
-                                Favorites 0
+                                Favorites (<span>{provided.favorites.length}</span>)
                             </Link> 
                             <Currentuser/>
                         </div>

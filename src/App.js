@@ -41,7 +41,7 @@ function App() {
   useEffect((
   )=>{
 
-    fetch('http://openlibrary.org/search.json?q='+searchThis)
+    fetch('https://openlibrary.org/search.json?q='+searchThis)
     .then(response => response.json())
     .then(response => setSearchResult(response.docs))
     .catch(err => console.error("err"));

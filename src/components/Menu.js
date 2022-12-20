@@ -15,7 +15,7 @@ const Menu=()=>{
             <div className="flex justify-between">
                 <div className="flex flex-col justify-center">
                     <Link to="/" onClick={provided.handleMenuToggle}>Home</Link>
-                    <Link to="/favorites" onClick={provided.handleMenuToggle}>Favorites</Link>
+                    <Link to="/favorites" onClick={provided.handleMenuToggle}>Favorites (<span className='text-white'> {provided.favorites.length} </span>)</Link>
                     <p>About</p>
                     <p>Contact us</p>
                 </div>    

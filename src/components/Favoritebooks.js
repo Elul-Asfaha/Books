@@ -6,13 +6,13 @@ const Favoritebooks=(props)=>{
     useEffect((
         )=>{
       
-          fetch('https://openlibrary.org/works/OL8876501W.json')
+          fetch('https://openlibrary.org'+searchQuery+'.json')
           .then(response => response.json())
           .then(response => setRetrieved(response))
           .catch(err => console.error("err"));
         }
       
-        ,[])
+        ,[searchQuery])
         console.log(searchQuery)
         console.log(retrieved)
       
@@ -23,16 +23,11 @@ const Favoritebooks=(props)=>{
                     Title:{" "+retrieved.title}
                 </p>
                 <p>
-                    Author: {" "+retrieved.authors[0]}
                 </p>
                 <p>
-                    Published:{" "+props.data.first_publish_year}
+                    Published:{" "+retrieved.last_modified.value}
                 </p>
-                <p>
-                {props.id}</p>
-                https://openlibrary.org/works/
-                <p>OL45883W.json
-                </p>
+              
 
             </div>
         </div>
