@@ -1,4 +1,5 @@
 import { useContext } from "react"
+import { Link } from "react-router-dom"
 import { provideData } from "../App"
 const Login=()=>{
 const provided=useContext(provideData)
@@ -88,7 +89,7 @@ const provided=useContext(provideData)
                                     type="checkbox"
                                     className="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                                     />
-                                    <label className="form-check-label inline-block text-white-300" for="exampleCheck2"
+                                    <label className="form-check-label inline-block text-white-300" htmlFor="exampleCheck2"
                                     >Remember me</label                    >
                                 </div>
                                 <a href="#!" className="text-gray-400">Forgot password?</a>
@@ -103,11 +104,11 @@ const provided=useContext(provideData)
                                 </button>
                                 <p className="text-sm font-semibold mt-2 pt-1 mb-0">
                                     Don't have an account? 
-                                    <a
-                                    href="#!"
+                                    <Link to="/Register"
                                     className="ml-1 text-red-600 hover:text-red-700 focus:text-red-700 transition duration-200 ease-in-out"
-                                    >Register</a
                                     >
+                                        Register
+                                    </Link>
                                 </p>
                             </div>
                         </form>

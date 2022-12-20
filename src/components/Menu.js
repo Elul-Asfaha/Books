@@ -3,6 +3,7 @@ import Signoutbtn from './Signoutbtn';
 import { useContext } from 'react';
 import { provideData } from '../App';
 import Currentuser from './Currentuser';
+import { Link } from 'react-router-dom';
 const Menu=()=>{
     const provided=useContext(provideData)
 
@@ -13,7 +14,8 @@ const Menu=()=>{
         <div className="flex flex-col md:hidden justify-between absolute top-0 left-0 bot-0 w-full h-screen bg-slate-700 p-3 z-50">
             <div className="flex justify-between">
                 <div className="flex flex-col justify-center">
-                    <p>Home</p>
+                    <Link to="/" onClick={provided.handleMenuToggle}>Home</Link>
+                    <Link to="/favorites" onClick={provided.handleMenuToggle}>Favorites</Link>
                     <p>About</p>
                     <p>Contact us</p>
                 </div>    
