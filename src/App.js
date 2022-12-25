@@ -17,7 +17,7 @@ import Authentication from './pages/Authentication';
 export const  provideData=createContext()
 
 function App() {
-  // const [verifiedUser,setVerifiedUser]=useState(false)
+   const [verifiedUser,setVerifiedUser]=useState(false)
   const [user,setUser]=useState("")
   const [MenuToggle,setMenuToggle]=useState(false)
   const [searchQuery,setSearchQuery]=useState(
@@ -107,12 +107,12 @@ function App() {
   return (
     <div>
 
-    <provideData.Provider value={{handleMenuToggle,handleSearchQuery,handleSearch,handleLogin,handleLogOut,favorites,handleSearchReset,searchResult,user}}>
+    <provideData.Provider value={{handleMenuToggle,handleSearchQuery,handleSearch,handleLogin,handleLogOut,favorites,handleSearchReset,searchResult,user,setVerifiedUser,setUser}}>
 
         <BrowserRouter>
-          {(!user) && <Authentication/>}  
+          {(!verifiedUser) && <Authentication/>}  
 
-          {(user) &&   
+          {(verifiedUser) &&   
             <div className='relative min-h-screen flex flex-col dark:bg-slate-800 dark:text-white'>
               <Routes>
                 <Route path="/" element={<Home/>} />

@@ -1,8 +1,24 @@
-import { useContext } from "react"
+import { signInWithEmailAndPassword } from "firebase/auth"
+import { useContext, useState } from "react"
 import { Link } from "react-router-dom"
 import { provideData } from "../App"
+import { auth } from "../firebase"
 const Login=()=>{
-const provided=useContext(provideData)
+    const provided=useContext(provideData)
+    const [email,setEmail]=useState("")
+    const [password,setPassword]=useState("")
+
+    const handleLogin=(e)=>{
+            e.preventDefault()
+        signInWithEmailAndPassword(auth,email,password).then((Credential)=>{
+            provided.setVerifiedUser(true);
+            provided.setUser(Credential.user.email)
+                    }).catch(
+            (error)=>{console.log(error)
+        })
+    }
+
+
     return(
         <section className="h-screen bg-slate-900">
             <div className="px-6 h-full text-white">
@@ -10,7 +26,7 @@ const provided=useContext(provideData)
                     className="flex xl:justify-center lg:justify-center justify-center items-center flex-wrap h-full g-6"
                 >
                     <div className="xl:ml-20 xl:w-4/12 lg:w-5/12 md:w-7/12 mb-12 md:mb-0">
-                        <form onSubmit={provided.handleLogin}>
+                        <form onSubmit={handleLogin}>
                             <div className="flex flex-row items-center justify-center">
                                 <p className="text-lg mb-0 mr-4">Sign in with</p>
                                 <button
@@ -65,10 +81,12 @@ const provided=useContext(provideData)
                 
                             <div className="mb-6">
                                 <input
-                                    type="text"
+                                    type="Email"
                                     className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                                    placeholder="Username"
-                                    id="username"
+                                    placeholder="Email"
+                                    id="Email"
+                                    onChange={(e)=>setEmail(e.target.value)}
+
                                     required
                                 />
                             </div>
@@ -79,6 +97,8 @@ const provided=useContext(provideData)
                                     type="password"
                                     className="form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                                     placeholder="Password"
+                                    value={password}
+                                    onChange={(e)=>setPassword(e.target.value)}
                                     required
                                 />
                             </div>

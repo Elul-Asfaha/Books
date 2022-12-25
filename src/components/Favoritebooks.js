@@ -27,6 +27,8 @@ const Favoritebooks=(props)=>{
 
          }
 
+        //  http://openlibrary.org/api/volumes/brief/<id-type>/<id-value>.json
+
     return(
         <div  className="shadow-md shadow-slate-700 w-10/12 md:flex md:flex-col md:w-4/12 lg:w-3/12">
             <div className="flex-1 border border-1">
