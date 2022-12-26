@@ -98,6 +98,7 @@ function App() {
 
   const handleLogOut=()=>{
     setUser("")
+    setVerifiedUser(false)
     MenuToggle && setMenuToggle(!MenuToggle)
   }
   const handleSearchReset=()=>{
