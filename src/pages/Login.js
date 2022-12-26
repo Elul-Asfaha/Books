@@ -16,6 +16,7 @@ const Login=()=>{
         signInWithEmailAndPassword(auth,email,password).then((Credential)=>{
             provided.setVerifiedUser(true);
             provided.setUser(Credential.user.email)
+            setIncorrectCredentials(false)
                     }).catch(
             (error)=>{
                 setIncorrectCredentials(true)
