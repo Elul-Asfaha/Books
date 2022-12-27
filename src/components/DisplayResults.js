@@ -11,7 +11,6 @@ const DisplayResults=()=>{
     const provided=useContext(provideData)
     const useProdived=provided.searchResult
     const dispResult=useProdived.map(items=>(items.isbn) &&<Book key={items.key} data={items} isbn={items.isbn}  />)
-    console.log(useProdived.slice(1,5))
     return(
         <div className="min-h-screen flex flex-col min-h-screen text-base text-white bg-slate-800">
             <Nav/>

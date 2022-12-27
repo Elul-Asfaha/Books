@@ -15,7 +15,7 @@ const Favorite=(props)=>{
  }
  const addFav=async()=>{
     await addDoc(collection(db,'favorites'),{
-        key: props.data.key
+        key: props.isbn[0]
     })
  }
 
