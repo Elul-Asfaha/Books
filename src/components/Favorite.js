@@ -21,8 +21,8 @@ const Favorite=(props)=>{
 
     return(
         <div className="absolute top-5 right-5" onClick={handleFavoriteToggle}>
-            {!fav && <FavoriteBorder />}
-            {(fav) && <FavoriteIcon/>}
+            {!fav && <FavoriteBorder style={{fill: "teal"}} />}
+            {(fav) && <FavoriteIcon  style={{fill: "teal"}} />}
         </div>
     )
 }

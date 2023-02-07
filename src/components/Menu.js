@@ -23,7 +23,7 @@ const Menu=()=>{
                     <Close  onClick={provided.handleMenuToggle}/>
                 </button>
             </div>
-            <div className="flex justify-between px-5">
+            <div className="flex justify-between gap-2">
                 <Currentuser/>
                 <Signoutbtn className="flex items-center"/>
             </div>

@@ -34,9 +34,9 @@ const Favoritebooks=(props)=>{
          }
         
     return(
-        <div className="shadow-md shadow-slate-700 w-10/12 md:flex md:flex-col md:w-5/12 lg:w-5/12 md:items-center">
+        <div className="shadow-md shadow-slate-700 w-8/12  md:w-4/12 lg:w-3/12 xl:w-2/12 md:items-center">
       
-            <div className="flex-1 min-h-[240px]">
+            <div className="flex-1 min-h-[220px]">
                 <img src={"https://covers.openlibrary.org/b/isbn/"+searchQuery+"-M.jpg"}  alt="No_cover_found" className="w-full"/>    
             </div>
             <div className="flex-1 flex items-left flex-col mt-3 w-full  px-4">

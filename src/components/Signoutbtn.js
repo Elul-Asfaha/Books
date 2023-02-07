@@ -7,10 +7,10 @@ const Signoutbtn=()=>{
 
     const provided=useContext(provideData)
     return(
-        <Link to="/" onClick={provided.handleLogOut} className=" cursor-pointer border border-3 rounded-md">
-            <span className="md:hidden w-3/12  p-2">Sign out</span>
-            <span className="hidden md:block">
-                <CloseIcon />
+        <Link to="/" onClick={provided.handleLogOut} className=" cursor-pointer border border-3 w-full rounded-md md:w-auto">
+            <p className="md:hidden   text-center ">Sign out</p>
+            <span className="hidden md:flex">
+                <CloseIcon />   
             </span>
         </Link>
     )
