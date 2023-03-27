@@ -35,7 +35,7 @@ const SignUp=()=>{
                 >
                     <div className="shadow shadow-white  p-5 xl:ml-20 xl:w-4/12 lg:w-4/12 md:w-7/12 mb-12 md:mb-0 ">
                         <Link to="/"
-                             className="inline-block px-3 py-1 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
+                             className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 inline-block px-3 py-1 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
                         <ArrowBackIcon/>
                         </Link>
                         {!registartionSuccessfull?
@@ -88,7 +88,7 @@ const SignUp=()=>{
                             <div className="text-center lg:text-left">
                                 <button
                                     type="submit"
-                                    className="inline-block px-7 py-3 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                                    className="inline-block px-7 py-3 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
                                 >
                                         Register
                                 </button>

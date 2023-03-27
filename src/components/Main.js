@@ -42,8 +42,8 @@ const Main=()=>{
                 </select>
                 <div className="my-2 flex justify-center  items-center bg-white border border-black">
                     <input type='text' name="query" className='indent-2 outline-none text-black w-full' onChange={provided.handleSearchQuery}/>
-                    <button onClick={provided.handleSearch} className="bg-teal-900">
-                       <SearchIcon className="h-100 m-1 text-white-900 cursor-pointer bg-teal-900"/>
+                    <button onClick={provided.handleSearch} className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                       <SearchIcon className="h-100 m-1 text-white-900 cursor-pointer bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"/>
                     </button>
                 </div>
               
