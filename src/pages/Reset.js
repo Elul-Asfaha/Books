@@ -12,7 +12,7 @@ const Reset=()=>{
         sendPasswordResetEmail(auth,email).then(()=>{
             setResetSentToggle(true)
         }).catch(
-            (error)=>{console.log(error)
+            (err)=>{console.error(err)
         })
     }
 

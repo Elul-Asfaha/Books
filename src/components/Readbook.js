@@ -11,8 +11,6 @@ const Readbook =()=>{
         .catch(err => console.error("err"));    
    
     }
-console.log( "http://openlibrary.org/api/volumes/brief/<id-type>/<id-value>.json")
-
     red()
     return(
         <div>

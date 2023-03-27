@@ -14,9 +14,14 @@ const Favorite=(props)=>{
         setFav(true)
  }
  const addFav=async()=>{
+    try{
     await addDoc(collection(db,'favorites'),{
         key: props.isbn[0]
     })
+}catch(error){
+    console.error(error)
+}
+
  }
 
     return(

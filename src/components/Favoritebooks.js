@@ -11,7 +11,6 @@ const Favoritebooks=(props)=>{
         }
     })
     const searchQuery=props.isbn
-   console.log(searchQuery)
    
    //search the openlibrary works api
     useEffect((

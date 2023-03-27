@@ -8,20 +8,23 @@ const SignUp=()=>{
     const [email,setEmail]=useState("")
     const [password,setPassword]=useState("")
     const [confirmPassword,setConfirmPassword]=useState("")
+    const [emailInUse,setEmailInUse]=useState(false)
+    const [registartionSuccessfull,setRegistrationSucessfull]=useState(false)
     const handleSignUp=(e)=>{
         e.preventDefault();
 
         createUserWithEmailAndPassword(auth,email,password).then(
 
-                console.log("successfully registered")
+            setRegistrationSucessfull(true)
             ).catch((error)=>{
-                alert("Email Already In Use")
+                setEmailInUse(!emailInUse)
                 return; 
             })
         
             setEmail("")
             setPassword("")
             setConfirmPassword("")
+            
     }
 
     return(
@@ -35,13 +38,13 @@ const SignUp=()=>{
                              className="inline-block px-3 py-1 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
                         <ArrowBackIcon/>
                         </Link>
-                        <form onSubmit={handleSignUp}>
+                        {!registartionSuccessfull?
+                        <form onSubmit={handleSignUp} autoComplete="off">
                             <div className="flex flex-row items-center justify-center lg:justify-center mb-6">
                                 <p className="text-lg mb-0 mr-4">CREATE NEW ACCOUNT</p>
                            
                             </div>
-                
-                            
+                       
                             <div className="mb-6">
                                 <input
                                     type="Email"
@@ -51,8 +54,15 @@ const SignUp=()=>{
                                     onChange={(e)=>setEmail(e.target.value)}
                                     required
                                 />
+                                {emailInUse?
+                                <div
+                                className="mb-4 rounded-lg bg-danger-100 pt-2 px-6 text-base text-red-700"
+                                role="alert">
+                                    Email Already In Use
+                                </div>:''
+                                }
                             </div>
-                
+                            
                             <div className="mb-6">
                                 <input
                                     type="password"
@@ -83,7 +93,14 @@ const SignUp=()=>{
                                         Register
                                 </button>
                             </div>
-                        </form>
+                        </form>:''}
+                        {registartionSuccessfull?
+                                <div
+                                className="mb-4 rounded-lg bg-danger-100 pt-2 px-6 text-base text-lg text-green-700"
+                                role="alert">
+                                    Successfully registered
+                                </div>:''
+                                }
                     </div>
                 </div>
             </div>
